@@ -7,12 +7,18 @@ class Solution {
         memo = new int[n];
        // int dp[] = new int[n];
         //dp[n - 1] = true;
-       // int sum = nums[0];
-        // for (int i = 1; i < n; i++) {
-        //     if (sum - 1 <= 0) return false;
-        //     sum = sum - 1 + nums[i];
-        // }
-        return (canJumpHelper(nums, 0) == 1) ? true : false;
+       int sum = nums[0];
+       int targetIndex = n-1 ;
+        for (int i = n-2; i >=0; i--) {
+            if (nums[i]+i>=targetIndex) targetIndex=i;
+            
+            
+        
+        }
+        
+        return (targetIndex==0)?true:false;
+       // return true; 
+        //return (canJumpHelper(nums, 0) == 1) ? true : false;
         //return true;
         //          for(int i= n-2;i>=0;i--){
         //              for (int i = 0 ;i<)

@@ -15,8 +15,6 @@ class Solution {
     }
 
     public void fillZeros(int[][] mat, int i, int j) {
-        // fill up
-
         for (int y = 0; y < mat.length; y++) mat[y][j] = 0;
         for (int x = 0; x < mat[0].length; x++) mat[i][x] = 0;
     }

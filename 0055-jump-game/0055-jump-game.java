@@ -7,7 +7,7 @@ class Solution {
         memo = new int[n];
        // int dp[] = new int[n];
         //dp[n - 1] = true;
-        int sum = nums[0];
+       // int sum = nums[0];
         // for (int i = 1; i < n; i++) {
         //     if (sum - 1 <= 0) return false;
         //     sum = sum - 1 + nums[i];

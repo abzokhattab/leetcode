@@ -9,7 +9,7 @@ class ListNode {
 }
 class MyHashMap {
     static final int size = 19997;
-    //static final int mult = 12582917;
+
     ListNode[] data;
     public MyHashMap() {
         this.data = new ListNode[size];

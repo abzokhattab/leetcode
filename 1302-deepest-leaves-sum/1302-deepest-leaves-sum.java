@@ -25,13 +25,9 @@ class Solution {
             int n = q.size();
 
             res = 0;
-            boolean isLeaf = false;
             for (int i = 0; i < n; i++) {
                 TreeNode current = q.poll();
-                if (current.right == null && current.left == null) {
-                    isLeaf = true;
-                    res += current.val;
-                } else isLeaf = false;
+                res += current.val;
                 if (current.right != null) q.add(current.right);
                 if (current.left != null) q.add(current.left);
             }
